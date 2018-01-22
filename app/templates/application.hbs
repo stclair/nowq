@@ -1,4 +1,11 @@
 <div class="main">
   <div class="header">Now Queueing {{#change-queue type="subtract"}}-{{/change-queue}} {{#change-queue type="add"}}+{{/change-queue}}</div>
-  <div class="counter">{{model.queue.value.currentPosition}}</div>
+  {{#if model.queue.value.currentPosition}}
+    <div class="counter">{{model.queue.value.currentPosition}}</div>
+  {{else}}
+    <div class="message">
+      Starting Soon
+    </div>
+  {{/if}}
+  {{full-screen}}
 </div>

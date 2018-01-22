@@ -1,6 +1,13 @@
+body {
+  background-color: #202020;
+}
+
 .main {
   text-align: center;
   height: 100vh;
+  color: #efefef;
+  background-color: #202020;
+  width: 100%;
 }
 
 .header {
@@ -13,7 +20,22 @@
   font-size: 65vh;
 }
 
+.message {
+  margin: 1em;
+  font-size: 20vh;
+}
+
 .clickable {
   cursor: pointer;
   color: grey;
+}
+
+.fullscreen {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main:fullscreen > div.fullscreen {
+  display: none;
 }
