@@ -1,0 +1,19 @@
+.main {
+  text-align: center;
+  height: 100vh;
+}
+
+.header {
+  height: 10%;
+  font-size: 10vh;
+}
+
+.counter {
+  height: 90%;
+  font-size: 65vh;
+}
+
+.clickable {
+  cursor: pointer;
+  color: grey;
+}
