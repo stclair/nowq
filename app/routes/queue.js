@@ -10,6 +10,13 @@ export default Ember.Route.extend({
     signOut: function() {
       this.get('session').close();
     }
-  }
+  },
 
+  model() {
+    return RSVP.hashSettled({
+      queue: this.get('store').findAll('queue').then((response) => {
+        return response.get('firstObject');
+      })
+    });
+  }
 });

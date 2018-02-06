@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'nowq',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -22,6 +22,9 @@ module.exports = function(environment) {
       authDomain: 'nowq-b974f.firebaseapp.com',
       databaseURL: 'https://nowq-b974f.firebaseio.com',
       storageBucket: '',
+    },
+    torii: {
+      sessionServiceName: 'session'
     },
 
     APP: {

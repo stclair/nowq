@@ -2,6 +2,11 @@ body {
   background-color: #202020;
 }
 
+label {
+  color: white;
+  width: 10em;
+}
+
 .main {
   text-align: center;
   height: 100vh;
@@ -35,7 +40,21 @@ body {
   bottom: 0;
   right: 0;
 }
-
-.main:fullscreen > div.fullscreen {
+:fullscreen .no-fullscreen {
   display: none;
+}
+:-webkit-full-screen .no-fullscreen {
+  display: none;
+}
+:-moz-full-screen .no-fullscreen {
+  display: none;
+}
+:-ms-full-screen .no-fullscreen {
+  display: none;
+}
+
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
