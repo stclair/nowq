@@ -9,6 +9,9 @@ export default Ember.Route.extend({
   actions: {
     signOut: function() {
       this.get('session').close();
+    },
+    setFocus: function() {
+      console.log(Ember.$('.add').focus());
     }
   },
 
