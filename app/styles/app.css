@@ -8,7 +8,7 @@ label {
   width: 10em;
 }
 
-button, textarea {
+button, textarea, input {
   color: black;
 }
 
