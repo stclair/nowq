@@ -40,6 +40,10 @@ button, textarea {
   font-size: 10vh;
 }
 
+.message-smaller p {
+  white-space: pre;
+}
+
 .clickable {
   cursor: pointer;
   color: grey;

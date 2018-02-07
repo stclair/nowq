@@ -1,8 +1,7 @@
 <div class="main">
   {{#if model.queue.value.message}}
     <div class="message-smaller">
-      {{model.queue.value.message}}
-      <br>
+      <p>{{model.queue.value.message}}</p>
       {{#if model.queue.value.currentPosition}}
         <hr>
         Now Queueing {{model.queue.value.currentPosition}}
