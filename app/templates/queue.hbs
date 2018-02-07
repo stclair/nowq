@@ -1,17 +1,33 @@
 <div class="main">
-  <div class="header">
-    Now Queueing
-    {{#if session.isAuthenticated}}
-      {{#change-queue type="subtract"}}-{{/change-queue}} {{#change-queue type="add"}}+{{/change-queue}}
-    {{/if}}
-  </div>
-  {{#if model.queue.value.currentPosition}}
-    <div class="counter">{{model.queue.value.currentPosition}}</div>
-  {{else}}
-    <div class="message">
-      Starting Soon
+  {{#if model.queue.value.message}}
+    <div class="message-smaller">
+      {{model.queue.value.message}}
+      <br>
+      {{#if model.queue.value.currentPosition}}
+        <hr>
+        Now Queueing {{model.queue.value.currentPosition}}
+      {{/if}}
+      {{#if session.isAuthenticated}}
+        {{#change-queue type="subtract"}}-{{/change-queue}} {{#change-queue type="add"}}+{{/change-queue}}
+      {{/if}}
     </div>
+  {{else}}
+
+    <div class="header">
+      Now Queueing
+      {{#if session.isAuthenticated}}
+        {{#change-queue type="subtract"}}-{{/change-queue}} {{#change-queue type="add"}}+{{/change-queue}}
+      {{/if}}
+    </div>
+    {{#if model.queue.value.currentPosition}}
+      <div class="counter">{{model.queue.value.currentPosition}}</div>
+    {{else}}
+      <div class="message">
+        Starting Soon
+      </div>
+    {{/if}}
+
   {{/if}}
   {{full-screen setFocus=(route-action "setFocus")}}
-  <div class="login no-fullscreen">{{#link-to "login"}}log in/out{{/link-to}}</div>
+  <div class="login no-fullscreen">{{#link-to "admin"}}admin{{/link-to}}</div>
 </div>

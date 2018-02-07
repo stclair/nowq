@@ -1,10 +1,15 @@
 body {
   background-color: #202020;
+  color: #efefef;
 }
 
 label {
   color: white;
   width: 10em;
+}
+
+button, textarea {
+  color: black;
 }
 
 .main {
@@ -28,6 +33,11 @@ label {
 .message {
   margin: 1em;
   font-size: 20vh;
+}
+
+.message-smaller {
+  margin: 1em;
+  font-size: 10vh;
 }
 
 .clickable {

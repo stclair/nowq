@@ -1,0 +1,11 @@
+<h1>Admin</h1>
+{{#link-to "queue"}}return to queue{{/link-to}}
+<hr>
+{{#if session.isAuthenticated}}
+  Display Message<br>
+  {{change-message}}
+  <hr>
+  <button {{action "signOut"}}>Sign Out</button>
+{{else}}
+  {{log-in}}
+{{/if}}

@@ -8,7 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('queue', {path: '/'});
-  this.route('login');
+  this.route('admin');
 });
 
 export default Router;
