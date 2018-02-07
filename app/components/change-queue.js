@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'button',
-  classNames: ['clickable'],
+  classNames: ['change-queue'],
   classNameBindings: ['type'],
   store: Ember.inject.service(),
   didInsertElement: function() {

@@ -35,6 +35,21 @@ label {
   color: grey;
 }
 
+.change-queue {
+  padding: 0 0 .15em 0;
+  color: black;
+  height: 1.2em;
+  width: 1.2em;
+  line-height: 0em;
+  border-radius: 8px;
+  background-color: #202020;
+  color: #efefef;
+}
+
+.change-queue:focus {
+  outline: 0;
+}
+
 .fullscreen {
   position: absolute;
   bottom: 0;
